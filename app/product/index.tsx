@@ -1,5 +1,5 @@
 import { Link, useRouter } from "expo-router";
-import { View, Text, Button } from "react-native";
+import { View, Text, Button, Pressable } from "react-native";
 
 
 const getRandomUserId = () => {
@@ -15,9 +15,9 @@ export default function ProductPage() {
     }
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-    <Button onPress={handelNavigation}>
+    <Pressable onPress={handelNavigation}>
         Random Profile Detail
-    </Button>
+    </Pressable>
     </View>
   );
 }
